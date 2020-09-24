@@ -1,0 +1,20 @@
+input_dir: binauralbits/Resources
+output_dir: binauralbits/Resources
+
+strings:
+  inputs: Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: L10n.swift
+
+xcassets:
+  inputs:
+      - Assets/Base.xcassets      
+      - Assets/Images.xcassets
+      - Assets/Colors.xcassets 
+
+  outputs:
+    - templateName: swift4
+      output: R.swift
+      params:
+        enumName: R

@@ -1,0 +1,159 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - Alamofire (5.2.2)
+  - CryptoSwift (1.3.1)
+  - MaterialComponents/AnimationTiming (113.1.0)
+  - MaterialComponents/Availability (113.1.0)
+  - MaterialComponents/Buttons (113.1.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Elevation (113.1.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (113.1.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (113.1.0)
+  - MaterialComponents/private/Application (113.1.0)
+  - MaterialComponents/private/Color (113.1.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Math (113.1.0)
+  - MaterialComponents/Ripple (113.1.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (113.1.0)
+  - MaterialComponents/ShadowLayer (113.1.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (113.1.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (113.1.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/TextFields (113.1.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (113.1.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MDFTextAccessibility
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - Nuke (9.1.1)
+  - Presentr (1.9)
+  - ReachabilitySwift (5.0.0)
+  - Realm (5.3.5):
+    - Realm/Headers (= 5.3.5)
+  - Realm/Headers (5.3.5)
+  - RealmSwift (5.3.5):
+    - Realm (= 5.3.5)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
+  - RNCryptor (5.1.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SwiftKeychainWrapper (3.4.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (from `https://github.com/GGustavoLopez/ActionSheetPicker-3.0`, commit `ad21f8c8908665ee68623d4fee6c26baaa4cb0dd`)
+  - CryptoSwift
+  - MaterialComponents/TextFields
+  - Moya/RxSwift
+  - Nuke
+  - Presentr
+  - ReachabilitySwift
+  - RealmSwift
+  - Reusable
+  - RNCryptor (~> 5.0)
+  - RxCocoa
+  - RxSwift
+  - SwiftKeychainWrapper
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CryptoSwift
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
+    - Moya
+    - Nuke
+    - Presentr
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
+    - Reusable
+    - RNCryptor
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftKeychainWrapper
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  ActionSheetPicker-3.0:
+    :commit: ad21f8c8908665ee68623d4fee6c26baaa4cb0dd
+    :git: https://github.com/GGustavoLopez/ActionSheetPicker-3.0
+
+CHECKOUT OPTIONS:
+  ActionSheetPicker-3.0:
+    :commit: ad21f8c8908665ee68623d4fee6c26baaa4cb0dd
+    :git: https://github.com/GGustavoLopez/ActionSheetPicker-3.0
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  CryptoSwift: f12f037f6d0fcd6d48c96db0071b653de64e6c4d
+  MaterialComponents: 2dd68a6e240ec31c37a4559f176b7bcfe31ef92c
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Nuke: af4301b154d3afd8a3b045a5194a9a773a00b7a8
+  Presentr: 7078d7eb5d1661ebeaae60c9e42a1e534de1b993
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Realm: 2b52fcc86fc0ed3d75a56ac0eb1e73c4f1a60e16
+  RealmSwift: a6ea2ea561039fc3833c08dec81371a9a3bb5ca6
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
+  RNCryptor: a369134686cd2ad391323cc856b62e591193ba79
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: f477005ecb8ff92657ba252d4981d2db177a28df
+
+COCOAPODS: 1.9.3

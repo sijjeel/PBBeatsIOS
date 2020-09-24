@@ -1,0 +1,58 @@
+"betsInfo" = "BETA BEATS para la atención cognitiva y concentración, aprendizaje activo y enfocado. Te ayuda para obtener claridad mental, habilidad para procesar información de alto nivel ye tener un desempeño máximo.";
+
+"wellnessTitle" = "Bienestar";
+"wellnessInfo" = "LOW ALPHA BEATS para un completo bienestar, armonía y balance, reducción de estrés, incremento de autoestmia, felicidad y alegría de vivir";
+
+"sleepBetterTitle" = "Dormir mejor y regeneración";
+"sleepBetterInfo" = "DELTA BEATS te ayudará a dormir mejor y más profuncdamente. Tú promueves tu recuperación y la regeneración de tu cuerpo y mente. Reduces tu estrés mental y te aseguras de disfrutar de una vida más relajada";
+
+"creativityTitle" = "Creatividad";
+"creativityInfo" = "ALPHA BEATS te ayudará a reforzar tu creatividad e intuición enfocada, balance, sentimiento de fluidez. Solucionarás mejor y más rápidamente los problemas y tendrás nuevas ideas.";
+
+"fastLearningTitle" = "Rápido aprendizaje";
+"fastLearningInfo" = "LOW BETA BEATS promueven un estado relajado de alerta durante el aprendizaje, promueve las habilidades cognitivas, desempeño de memoria y productividad, asó como la habilidad para manejar la calma física y emocional durante diferentes tareas";
+
+"maximunConcentrationTitle" = "Concentración máxima";
+"maximunConcentrationInfo" = "BETA BEATS para la atención cognitiva y concentración, aprendizaje activo y enfocado. Te ayuda para tener claridad mental, habilidad para procesar información de alto nivel y tener un desempeño máximo.";
+
+"weSorry" = "Lo sentimos";
+"defaultErrorMessage" = "Ocurrió un error al intentar reproducir la canción, intente de nuevo más tarde";
+"fileAllreadyExist" = "El archivo ya existe";
+"correct" = "Correcto!";
+"downloadComplete" = "Descarga completa";
+"ok" = "Ok";
+"songWillBeRepeated" = "La canción se repetirá al finalizar";
+"download" = "Descargar";
+"error" = "Error";
+"loading" = "Cargando...";
+"disableRepeat" = "La canción ya no se repetirá";
+
+"principalInfoPageTitle" = "CÓMO FUNCIONAN LAS FRECUENCIAS BINAURALES:";
+"principalInfoPageDetail" = "Cada estado de nuestro cerebro (por ejemplo, el sueño, la relajación, la concentración, el rendimiento, la creatividad, pero también el estrés y la sobrecarga) tiene una cierta vibración natural. \n\nCon la ayuda de los POWERBRAIN BEATS desarrollados por nosotros en Alemania, puedes influenciar positivamente tus ondas cerebrales. \n\nEsto funciona de tal manera que se oye un sonido diferente en el oído derecho y otro en el izquierdo. \n\nTu cerebro entra en resonancia con la diferencia y en poco tiempo te lleva al estado mental que deseas. \n\nNuestros BEATS se han producido en un proceso especial, tecnológicamente muy complejo, para cumplir con los más altos estándares de calidad en todo el mundo. \n\nNos distinguimos claramente de los producidos en masa de forma barata. \n\nLos sonidos producidos por nuestros especialistas están integrados en la música relajante y los sonidos de la naturaleza, que se pueden utilizar fácilmente con los auriculares de tu dispositivo móvil. \n\nEn muy poco tiempo, llevarás tu cerebro a la frecuencia de vibración deseada y experimentarás una profunda relajación interna, un sueño saludable o también, por ejemplo, un rendimiento significativamente mayor sin sentirte estresado.";
+
+"settingsTitle" = "AJUSTES.";
+"contactSupport" = "CONTACTAR A SOPORTE";
+
+"donwloadTitle" = "Por favor espere";
+"downloadMessage" = "La canción está siendo descargada";
+"rechableMessage" = "No se puede reproducir o descargar la canción ya que no se encuentra conectado a internet";
+
+"howItWorksTitle" = "¿CÓMO FUNCIONAN LAS FRECUENCIAS BINAURALES?";
+"howItWorksDescription" = "Cada estado de nuestro cerebro (por ejemplo, el sueño, la relajación, la concentración, el rendimiento, la creatividad, pero también el estrés y la sobrecarga) tiene una cierta vibración natural. Con la ayuda de los POWERBRAIN BEATS desarrollados por nosotros en Alemania, puedes influenciar positivamente tus ondas cerebrales. Esto funciona de tal manera que se oye un sonido diferente en el oído derecho y otro en el izquierdo.Tu cerebro entra en resonancia con la diferencia y en poco tiempo te lleva al estado mental que deseas. Nuestros BEATS se han producido en un proceso especial, tecnológicamente muy complejo, para cumplir con los más altos estándares de calidad en todo el mundo. Nos distinguimos claramente de los producidos en masa de forma barata. \n Los sonidos producidos por nuestros especialistas están integrados en la música relajante y los sonidos de la naturaleza, que se pueden utilizar fácilmente con los auriculares de tu dispositivo móvil. \n En muy poco tiempo, llevarás tu cerebro a la frecuencia de vibración deseada y experimentarás una profunda relajación interna, un sueño saludable o también, por ejemplo, un rendimiento significativamente mayor sin sentirte estresado.";
+
+"contacTitle" = "CONTACTO:";
+"contactDescription" = "Envíanos un E-Mail a: \nsupport@powerbrain-beats.com \nO encuéntranos en Facebook en la página: \nwww.facebook.com/powerbrain-beats \nUn producto alemán: \nPowerbrain GmbH (Sociedad Limitada) \nAllershausen \nAlemania";
+"copyrightsTitle" = "DERECHOS DE AUTOR:";
+"copyrightsDescription" = "Los derechos de autor de los POWERBRAIN BEATS y esta App pertenecen completamente a \npowerbrain GmbH (Sociedad Limitada), Allershausen, Alemania. \nwww.powerbrain-beats.com \nHan participado en este proyecto: \nGerente de programa: Inspira tu Corazón GmbH, Gröbenzell, Alemania, \nwww.inspiratucorazon.com \nProgramación: \nSocias Ltd. www.socias.bz \nDiseño, Redes Sociales y Mercadeo: Wormhole Warp Creative Launch Hub., San Salvador, El \nSalvador, www.wormholewarp.com";
+
+"information" = "Información";
+"contact" = "Contacto";
+"copyrights" = "Derechos de autor";
+"needConnectionToInternet" = "Necesitas una conexion a internet activa para reproducir la cancion, verifica tu conexion y reinicia la aplicacion";
+"purchaseSuccess" = "Compra realizada exitosamente";
+"purchaseFailed" = "Error al generar el pago, por favor intente de nuevo más tarde";
+"purchaseMessage" = "Para acceder a este contenido necesitas adquirir el servicio premium";
+"purchasePremiunButtonText" = "Comprar";
+"appName" = "PB Beats";
+"expiredSubscriptionMessage" = "La subscripción ha expirado, para seguir haciendo uso del servicio premium por favor renueve la subscripción.";
+"userAccountNotFoundOrDeletedMessage" = "La cuenta no puede ser encontrada o ha sido eliminada";
