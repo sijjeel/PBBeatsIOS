@@ -294,9 +294,11 @@ extension UnluckProductViewController: UnluckProductViewModelDelegate {
     
     func didFinishRestoringPurchasedProducts() {
         self.showAlertController(with: L10n.appName, and: "Purchase have been restored!")
+        K.isPurchased = true
     }
     
     func successPurchase() {
         self.showAlertController(with: L10n.appName, and: "Purchase was successfully")
+        K.isPurchased = true
     }
 }

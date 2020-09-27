@@ -35,6 +35,7 @@ class IAPManager: NSObject {
     
     private override init() {
         super.init()
+        self.startObserving()
     }
     
     
