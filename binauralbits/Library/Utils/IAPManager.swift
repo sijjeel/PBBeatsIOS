@@ -98,6 +98,7 @@ class IAPManager: NSObject {
     
     func buy(product: SKProduct, withHandler handler: @escaping ((_ result: Result<Bool, Error>) -> Void)) {
         let payment = SKPayment(product: product)
+        
         SKPaymentQueue.default().add(payment)
 
         // Keep the completion handler.
