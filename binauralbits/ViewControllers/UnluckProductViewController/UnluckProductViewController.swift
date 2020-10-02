@@ -15,6 +15,11 @@ final class UnluckProductViewController: UIViewController {
     
     // MARK: - Components
     
+    let yourAttributes: [NSAttributedString.Key: Any] = [
+        .font: UIFont.systemFont(ofSize: 12),
+        .foregroundColor: UIColor.white,
+        .underlineStyle: NSUnderlineStyle.single.rawValue]
+    
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -91,6 +96,36 @@ final class UnluckProductViewController: UIViewController {
         return button
     }()
     
+    lazy var termOfUSeButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        let attributeString = NSMutableAttributedString(string: "Términos de Uso",
+        attributes: yourAttributes)
+        button.setAttributedTitle(attributeString, for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        
+        return button
+    }()
+    
+    lazy var privacyPolicyButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        let attributeString = NSMutableAttributedString(string: "Política de Privacidad",
+        attributes: yourAttributes)
+        button.setAttributedTitle(attributeString, for: .normal)
+        return button
+    }()
+    
+    lazy var stackView: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .horizontal
+        stack.alignment = .fill
+        stack.distribution = .fillEqually
+        stack.spacing = 10
+        return stack
+    }()
+    
     // MARK: - Attributes
     
     weak var delegate: UnluckProductViewControllerDelegate?
@@ -121,6 +156,12 @@ final class UnluckProductViewController: UIViewController {
         contentView.addSubview(purchaseButton)
         contentView.addSubview(restoreButton)
         contentView.addSubview(cancelButton)
+        
+        stackView.addArrangedSubview(termOfUSeButton)
+        stackView.addArrangedSubview(privacyPolicyButton)
+        
+        contentView.addSubview(stackView)
+        
         
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -163,9 +204,15 @@ final class UnluckProductViewController: UIViewController {
             restoreButton.heightAnchor.constraint(equalToConstant: 50),
             
             cancelButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            cancelButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -32),
+            cancelButton.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -16),
             cancelButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             cancelButton.heightAnchor.constraint(equalToConstant: 50),
+            
+            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16),
+            
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+//            stackView.heightAnchor.constraint(equalToConstant: 50),
         ])
         
         let contentViewHeightContraint = contentView.heightAnchor.constraint(
@@ -193,6 +240,16 @@ final class UnluckProductViewController: UIViewController {
             action: #selector(didTapCancel(_:)),
             for: .touchUpInside
         )
+        
+        termOfUSeButton.addTarget(
+            self,
+            action: #selector(termsOfUSeButtonAction(_:)),
+            for: .touchUpInside)
+        
+        privacyPolicyButton.addTarget(
+            self,
+            action: #selector(privacyPolicyButtonAction(_:)),
+            for: .touchUpInside)
     }
     
     func getProducts() {
@@ -224,6 +281,37 @@ final class UnluckProductViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @objc private func termsOfUSeButtonAction(_ sender: UIButton) {
+        let webViewController = ABWebViewController()
+
+        let navigationController = UINavigationController()
+        
+        // Configure WebViewController
+        webViewController.URLToLoad = "https://powerbrain-beats.com/contrato-de-uso-de-app/"
+
+        // Customize UI of progressbar
+        webViewController.progressTintColor = UIColor.red
+        webViewController.trackTintColor = UIColor.brown
+
+        navigationController.addChild(webViewController)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
+    @objc private func privacyPolicyButtonAction(_ sender: UIButton) {
+        let webViewController = ABWebViewController()
+        let navigationController = UINavigationController()
+        // Configure WebViewController
+        webViewController.URLToLoad = "https://www.powerbrain-beats.com/privacy"
+
+        // Customize UI of progressbar
+        webViewController.progressTintColor = UIColor.red
+        webViewController.trackTintColor = UIColor.brown
+
+
+        navigationController.addChild(webViewController)
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     @objc private func didTapCancel(_ sender: UIButton) {
@@ -293,12 +381,12 @@ extension UnluckProductViewController: UnluckProductViewModelDelegate {
     }
     
     func didFinishRestoringPurchasedProducts() {
+        KeychainWrapper.standard.set(true, forKey: K.premiumUserKey)
         self.showAlertController(with: L10n.appName, and: "Purchase have been restored!")
-        K.isPurchased = true
     }
     
     func successPurchase() {
+        KeychainWrapper.standard.set(true, forKey: K.premiumUserKey)
         self.showAlertController(with: L10n.appName, and: "Purchase was successfully")
-        K.isPurchased = true
     }
 }

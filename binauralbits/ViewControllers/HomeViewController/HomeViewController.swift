@@ -153,11 +153,6 @@ final class HomeViewController: UIViewController {
         }catch{
             print("could not start reachability notifier")
         }
-        
-        if K.isPurchased {
-            K.isPurchased = false
-            verifyRecipt()
-        }
     }
     
     @objc func reachabilityChanged(note: Notification) {
