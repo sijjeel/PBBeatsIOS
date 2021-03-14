@@ -19,9 +19,11 @@ enum K {
         static let navigationBarHeight: CGFloat = 64
     }
     
-    static let isProduction = false
+    static let isProduction = true
     static let premiumUserKey = "PremiumUserKey"
     static let sharedSecretKey = "0017936b1de94bc997fcba1d27c7104a"
+    
+    static let checkReceipt = "CheckReceipt"
     
     // Moya
     enum MoyaDefaults {

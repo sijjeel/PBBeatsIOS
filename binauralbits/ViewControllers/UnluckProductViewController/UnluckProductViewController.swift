@@ -382,11 +382,13 @@ extension UnluckProductViewController: UnluckProductViewModelDelegate {
     
     func didFinishRestoringPurchasedProducts() {
         KeychainWrapper.standard.set(true, forKey: K.premiumUserKey)
+        UserDefaults.standard.set(true, forKey: K.checkReceipt)
         self.showAlertController(with: L10n.appName, and: "Purchase have been restored!")
     }
     
     func successPurchase() {
         KeychainWrapper.standard.set(true, forKey: K.premiumUserKey)
+        UserDefaults.standard.set(true, forKey: K.checkReceipt)
         self.showAlertController(with: L10n.appName, and: "Purchase was successfully")
     }
 }

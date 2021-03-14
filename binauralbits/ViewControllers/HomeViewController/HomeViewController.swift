@@ -134,6 +134,7 @@ final class HomeViewController: UIViewController {
     let realm = try! Realm()
     var canDownload: Bool = false
     var receiptData: String = ""
+    var checkReceipt = false
     
     // MARK: - LifeCycle
     
@@ -143,6 +144,12 @@ final class HomeViewController: UIViewController {
         view.layer.insertSublayer(gradientView, at: 0)
         setupLayout()
         setupActions()
+        
+        if UserDefaults.standard.bool(forKey: K.checkReceipt) {
+            self.checkReceipt = true
+        } else {
+            KeychainWrapper.standard.set(false, forKey: K.premiumUserKey)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -161,14 +168,18 @@ final class HomeViewController: UIViewController {
         switch reachability.connection {
         case .wifi:
             print("Reachable via WiFi")
-            verifyRecipt()
+            if self.checkReceipt {
+                verifyRecipt()
+            }
             if songs == 0 {
                 bindViewModel()
                 canDownload = true
             }
         case .cellular:
             print("Reachable via Cellular")
-            verifyRecipt()
+            if self.checkReceipt {
+                verifyRecipt()
+            }
             if songs == 0 {
                 bindViewModel()
                 canDownload = true
@@ -176,13 +187,13 @@ final class HomeViewController: UIViewController {
         case .unavailable:
             print("Network not reachable")
 //            UserDefaults.standard.set(true, forKey: K.premiumUserKey)
-            KeychainWrapper.standard.set(true, forKey: K.premiumUserKey)
+            //KeychainWrapper.standard.set(true, forKey: K.premiumUserKey)
             reachability.stopNotifier()
             NotificationCenter.default.removeObserver(self, name: .reachabilityChanged, object: reachability)
         case .none:
             print("Non entry")
 //            UserDefaults.standard.set(true, forKey: K.premiumUserKey)
-            KeychainWrapper.standard.set(true, forKey: K.premiumUserKey)
+            //KeychainWrapper.standard.set(true, forKey: K.premiumUserKey)
             reachability.stopNotifier()
             NotificationCenter.default.removeObserver(self, name: .reachabilityChanged, object: reachability)
         }

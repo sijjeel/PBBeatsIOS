@@ -10,6 +10,8 @@
 		0DC2F51224F2E9EA00C21FFD /* DefaultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2F51124F2E9EA00C21FFD /* DefaultModel.swift */; };
 		0DF97D07251AA779009A11E7 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF97D06251AA779009A11E7 /* IAPManager.swift */; };
 		0DF97D10251AAB55009A11E7 /* UnluckProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF97D0F251AAB55009A11E7 /* UnluckProductViewModel.swift */; };
+		39E2D5632524EBF80081694E /* ABWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E2D5612524EBF70081694E /* ABWebViewController.swift */; };
+		39E2D5642524EBF80081694E /* ABWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E2D5622524EBF80081694E /* ABWebViewController.xib */; };
 		47BD299E56CBCD9F61AC2B01 /* Pods_binauralbits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F22518665E1CA190BB3D62 /* Pods_binauralbits.framework */; };
 		C80325162413E1B8008D9D62 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80325152413E1B8008D9D62 /* SettingsViewController.swift */; };
 		C803251B2413F170008D9D62 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803251A2413F170008D9D62 /* InformationViewController.swift */; };
@@ -62,6 +64,8 @@
 		0DC2F51124F2E9EA00C21FFD /* DefaultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultModel.swift; sourceTree = "<group>"; };
 		0DF97D06251AA779009A11E7 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		0DF97D0F251AAB55009A11E7 /* UnluckProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnluckProductViewModel.swift; sourceTree = "<group>"; };
+		39E2D5612524EBF70081694E /* ABWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABWebViewController.swift; sourceTree = "<group>"; };
+		39E2D5622524EBF80081694E /* ABWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ABWebViewController.xib; sourceTree = "<group>"; };
 		5458E62B9E4BC4BCD4385DCB /* Pods-binauralbits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-binauralbits.release.xcconfig"; path = "Target Support Files/Pods-binauralbits/Pods-binauralbits.release.xcconfig"; sourceTree = "<group>"; };
 		90630326F34330B81ACEDDB6 /* Pods-binauralbits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-binauralbits.debug.xcconfig"; path = "Target Support Files/Pods-binauralbits/Pods-binauralbits.debug.xcconfig"; sourceTree = "<group>"; };
 		C80325152413E1B8008D9D62 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39E2D5602524EBCE0081694E /* ABWebView */ = {
+			isa = PBXGroup;
+			children = (
+				39E2D5612524EBF70081694E /* ABWebViewController.swift */,
+				39E2D5622524EBF80081694E /* ABWebViewController.xib */,
+			);
+			path = ABWebView;
+			sourceTree = "<group>";
+		};
 		5A7ACC748FF6C9CBF287E679 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +245,7 @@
 		C85A59962401A119002D2AF2 /* binauralbits */ = {
 			isa = PBXGroup;
 			children = (
+				39E2D5602524EBCE0081694E /* ABWebView */,
 				C80FF05724610B45005BA41C /* K.swift */,
 				C85A59972401A119002D2AF2 /* AppDelegate.swift */,
 				C85A59992401A119002D2AF2 /* SceneDelegate.swift */,
@@ -472,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8847D592401BBFA004C8BA1 /* Colors.xcassets in Resources */,
+				39E2D5642524EBF80081694E /* ABWebViewController.xib in Resources */,
 				C83480B12401B41D0055E9B4 /* Localizable.strings in Resources */,
 				C85A59A42401A11E002D2AF2 /* LaunchScreen.storyboard in Resources */,
 				C843DF55245B2D3B00EC7686 /* PlayerCollectionViewCell.xib in Resources */,
@@ -563,6 +578,7 @@
 				C8FD1E0C24704DF9006441CC /* ActionableButton.swift in Sources */,
 				C80FF07824611F54005BA41C /* DefaultPreferences.swift in Sources */,
 				C85A599A2401A119002D2AF2 /* SceneDelegate.swift in Sources */,
+				39E2D5632524EBF80081694E /* ABWebViewController.swift in Sources */,
 				C8847D5C2401BCDD004C8BA1 /* HomeViewController.swift in Sources */,
 				C8F3B7C8249E6F590026160F /* HomeViewControllerDelegate.swift in Sources */,
 				C80FF06224610E91005BA41C /* DefaultService.swift in Sources */,
@@ -707,19 +723,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = P27VPCT548;
 				INFOPLIST_FILE = binauralbits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pbbeats;
 				PRODUCT_NAME = "PB Beats";
-				PROVISIONING_PROFILE_SPECIFIER = PBBeatsDevelopmentProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "PB Beats Distribution Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -731,19 +747,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = P27VPCT548;
 				INFOPLIST_FILE = binauralbits/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pbbeats;
 				PRODUCT_NAME = "PB Beats";
-				PROVISIONING_PROFILE_SPECIFIER = PBBeatsDevelopmentProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "PB Beats Distribution Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

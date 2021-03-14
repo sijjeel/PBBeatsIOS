@@ -113,7 +113,10 @@ extension ApplicationCoordinator: HomeViewControllerDelegate {
     }
     
     func homeViewControllerDidSelectPlayer(with urlToPlay: String, and songName: String, also image: UIImage, finally numberOfSong: Int) {
-        if songName == "Creatividad" || KeychainWrapper.standard.bool(forKey: K.premiumUserKey) ?? false {
+        
+        let unlockSuccess = KeychainWrapper.standard.bool(forKey: K.premiumUserKey) ?? false
+        
+        if songName == "Creatividad" || unlockSuccess {
             let controller = PlayerViewController()
             controller.songUrl = urlToPlay
             controller.songName = songName

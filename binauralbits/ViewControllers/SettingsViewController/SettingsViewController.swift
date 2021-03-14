@@ -180,7 +180,10 @@ final class SettingsViewController: UIViewController {
     // MARK: - Helpers
     
     @objc private func handleHowItWorksSelection(_ sender: UIButton) {
-        delegate?.settingsViewControllerDidSelectHowItWorks()
+        //delegate?.settingsViewControllerDidSelectHowItWorks()
+        if let url = URL(string: "https://www.powerbrain-beats.com/informacion/") {
+            UIApplication.shared.open(url)
+        }
     }
     
     @objc private func handleContactSupportSelection(_ sender: UIButton) {
